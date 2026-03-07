@@ -1,4 +1,4 @@
-name: 01 Basic First WorkFLow
+name: 01-Basic-First-WorkFLow
 
 on:
   workflow-dispatch:
