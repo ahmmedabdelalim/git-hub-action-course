@@ -1,0 +1,14 @@
+name: 03 Basic Events Filter
+
+on:
+  push:
+    branches-ignore:
+      - master
+      - main
+
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World 3
+        run: echo "Hello World"
