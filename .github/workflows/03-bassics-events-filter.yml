@@ -1,0 +1,29 @@
+name: 03 Basic Events Filter
+
+on:
+  push:
+    # branches:   
+    #   - 03-basic-events-filter
+    # branches-ignore:
+    #   - master
+    #   - main
+
+    # tags:
+    #   - v2
+    # tags-ignore:
+    #   - v1
+
+    # paths:
+    #   - 'routes/web.php'
+    #   - 'routes/*.php'    # all file in routes folder with php extension
+    #   - 'routes/**'       # all file or folders in routes folder with any extension
+
+    # paths-ignore:
+    #   - 'app/**'
+    #   - 'database/**'
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World 3
+        run: echo "Hello World"
