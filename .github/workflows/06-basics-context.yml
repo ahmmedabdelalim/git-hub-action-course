@@ -3,7 +3,7 @@ name: 06  Basics  Context
 run-name: ${{github.actor}} Explaining context data - Try Numbe ${{github.run_number}}
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch
   # push:
   #   branches: [ 06-basics-context ]  # manually trigger the workflow
 
