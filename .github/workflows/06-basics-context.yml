@@ -3,7 +3,7 @@ run-name: ${{github.actor}} Explaining context data - Try Numbe ${{github.run_nu
 on:
   workflow_dispatch   # manually trigger the workflow
 
-jops:
+jobs:
   print-context-data:
     runs-on: ubuntu-latest
     steps:
