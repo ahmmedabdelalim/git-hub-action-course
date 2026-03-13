@@ -1,12 +1,21 @@
 name: 02 Basic Events
 
+on:
+  push:
+    branches:   
+      - master
+
 # on:
 #   [push ,pull_request]
 
-on:
-  pull_request:
-    types:
-      - closed
+# you can add multi events here as array
+  # pull_request:
+  #   types: [opened, synchronize, reopened]  
+
+# you can add multi events here as list
+    # types:  
+    #   - closed
+    #   - opened
 
 jobs:
   print-hello-world:
