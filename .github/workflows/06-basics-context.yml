@@ -1,5 +1,7 @@
 name: 06  Basics  Context
+
 run-name: ${{github.actor}} Explaining context data - Try Numbe ${{github.run_number}}
+
 on:
   workflow_dispatch   # manually trigger the workflow
 
@@ -9,9 +11,9 @@ jobs:
     steps:
       - name: Print Context Data
         # run: echo ${{ github }}
-        # run: echo ${{ github.actor }}
+        run: echo ${{ github.actor }}
         # run: echo ${{ github['actor'] }}
         # run: echo ${{ github.event_name }}
         # run: echo ${{ job.status }}
-        # run: echo ${{ toJson(github) }}
-        run: echo ${{ toJson(github.event) }}
+        # run: echo ${{ toJson(github) }} -- prints all the data in github context in json format 
+        # run: echo ${{ toJson(github.event) }}
