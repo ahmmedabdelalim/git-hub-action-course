@@ -1,7 +1,7 @@
 name: 01-Basic-First-WorkFLow
 
 on:
-  workflow_dispatch
+  workflow_dispatch   # manually trigger the workflow
 
 jobs:
   print-hello-world:
